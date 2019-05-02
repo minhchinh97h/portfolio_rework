@@ -1,7 +1,7 @@
 .intro-container{
     width: 100%;
+    height: calc(100% - 100px);
     top: 100px;
-    height: 800px;
     position: relative;
 }
 
@@ -22,7 +22,7 @@
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-timing-function: ease; */
-    height: 25%;
+    height: 33%;
 }
 
 .hi-there-img-holder{
@@ -36,7 +36,7 @@
 
 .im-holder{
     width: 100%;
-    height: 25%;
+    height: 33%;
 }
 
 .im-img-holder{
@@ -49,7 +49,7 @@
 
 .duong-minh-chinh-holder{
     width: 100%;
-    height: 30%;
+    height: 33%;
 }
 
 .duong-minh-chinh-img-holder{
@@ -63,17 +63,9 @@
 
 
 
-@media only screen and (max-width: 320px){
+@media only screen and (max-width: 374px){
     .intro-container{
-        height: 380px;
-    }
-
-    .hi-there-holder, .im-holder{
-        height: 70px;
-    }
-
-    .duong-minh-chinh-holder{
-        height: 80px;
+        height: calc(100% - 100px);
     }
 
     .hi-there-img-holder{
@@ -91,15 +83,7 @@
 
 @media only screen and (min-width: 375px) and (max-width: 424px){
     .intro-container{
-        height: 380px;
-    }
-
-    .hi-there-holder, .im-holder{
-        height: 100px;
-    }
-
-    .duong-minh-chinh-holder{
-        height: 100px;
+        height: calc(100% - 100px);
     }
 
     .hi-there-img-holder{
@@ -115,17 +99,9 @@
     }
 }
 
-@media only screen and (min-width: 425px) and (max-width: 425px){
+@media only screen and (min-width: 425px) and (max-width: 767px){
     .intro-container{
-        height: 380px;
-    }
-
-    .hi-there-holder, .im-holder{
-        height: 100px;
-    }
-
-    .duong-minh-chinh-holder{
-        height: 100px;
+        height: calc(100% - 100px);
     }
 
     .hi-there-img-holder{
@@ -138,5 +114,23 @@
 
     .duong-minh-chinh-img-holder{
         background-size: 400px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .intro-container{
+        height: calc(100% - 100px);
+    }
+
+    .hi-there-img-holder{
+        background-size: 600px;
+    }
+
+    .im-img-holder{
+        background-size: 570px;
+    }
+
+    .duong-minh-chinh-img-holder{
+        background-size: 700px;
     }
 }
