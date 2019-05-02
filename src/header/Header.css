@@ -1,0 +1,36 @@
+.header-container{
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.left-links-container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-holder{
+    margin: 0px 20px;
+}
+
+.link-holder a {
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.highlight-indicator{
+    width: 0%;
+    height: 2px;
+    margin: auto auto;
+    background-color: black;
+    transition: width 0.3s ease-in-out;
+}
+
+.link-holder:hover .highlight-indicator{
+    width: 100%;
+}
