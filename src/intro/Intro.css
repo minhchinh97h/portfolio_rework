@@ -3,134 +3,162 @@
     height: calc(100% - 100px);
     top: 100px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-@keyframes hi-word{
+@keyframes opacity-ani{
     0% {
-        transform: translateX(-100%);
+        opacity: 0;
     }
-
     100% {
-        transform: translateX(25%);
+        opacity: 1;
     }
+}
+
+.hi-there-holder, .im-holder, .duong-minh-chinh-holder{
+    height: 180px;
 }
 
 .hi-there-holder{
-    font-family: 'Playfair Display', serif;
-    font-size: 3em;
-    /* animation-name: hi-word;
-    animation-duration: 2s;
+    opacity: 0;
+    animation-name: opacity-ani;
+    animation-duration: 2.5s;
+    animation-delay: 0.5s;
     animation-fill-mode: forwards;
-    animation-timing-function: ease; */
-    height: 33%;
+    animation-timing-function: ease;
 }
 
 .hi-there-img-holder{
     height: 100%;
     background-image: url("/assets/images/HiThere.png");
     background-repeat: no-repeat;
-    background-size: 800px;
+    background-size: 1080px;
     background-position: center;
-    
 }
 
 .im-holder{
-    width: 100%;
-    height: 33%;
+    opacity: 0;
+    animation-name: opacity-ani;
+    animation-delay: 1.5s;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
 }
 
 .im-img-holder{
     height: 100%;
     background-image: url("/assets/images/Im.png");
     background-repeat: no-repeat;
-    background-size: 800px;
+    background-size: 1050px;
     background-position: center;
 }
 
+
 .duong-minh-chinh-holder{
-    width: 100%;
-    height: 33%;
+    opacity: 0;
+    animation-name: opacity-ani;
+    animation-delay: 2.5s;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
 }
 
 .duong-minh-chinh-img-holder{
     height: 100%;
     background-image: url("/assets/images/DuongMinhChinh.png");
     background-repeat: no-repeat;
-    background-size: 1024px;
+    background-size: 1100px;
     background-position: center;
 }
 
-
-
-
 @media only screen and (max-width: 374px){
-    .intro-container{
-        height: calc(100% - 100px);
+    .hi-there-holder, .im-holder, .duong-minh-chinh-holder{
+        height: 100px;
     }
 
     .hi-there-img-holder{
-        background-size: 280px;
+        background-size: 300px;
     }
 
     .im-img-holder{
-        background-size: 250px;
+        background-size: 270px;
     }
 
     .duong-minh-chinh-img-holder{
-        background-size: 300px;
+        background-size: 320px;
     }
 }
 
 @media only screen and (min-width: 375px) and (max-width: 424px){
-    .intro-container{
-        height: calc(100% - 100px);
+    .hi-there-holder, .im-holder, .duong-minh-chinh-holder{
+        height: 100px;
     }
 
     .hi-there-img-holder{
-        background-size: 340px;
+        background-size: 350px;
     }
 
     .im-img-holder{
-        background-size: 310px;
+        background-size: 320px;
     }
 
     .duong-minh-chinh-img-holder{
-        background-size: 360px;
+        background-size: 370px;
     }
 }
 
 @media only screen and (min-width: 425px) and (max-width: 767px){
-    .intro-container{
-        height: calc(100% - 100px);
+    .hi-there-holder, .im-holder, .duong-minh-chinh-holder{
+        height: 100px;
     }
 
     .hi-there-img-holder{
-        background-size: 380px;
+        background-size: 400px;
     }
 
     .im-img-holder{
-        background-size: 350px;
+        background-size: 370px;
     }
 
     .duong-minh-chinh-img-holder{
-        background-size: 400px;
+        background-size: 420px;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px){
-    .intro-container{
-        height: calc(100% - 100px);
+    .hi-there-holder, .im-holder, .duong-minh-chinh-holder{
+        height: 130px;
     }
 
     .hi-there-img-holder{
-        background-size: 600px;
+        background-size: 710px;
     }
 
     .im-img-holder{
-        background-size: 570px;
+        background-size: 680px;
     }
 
     .duong-minh-chinh-img-holder{
-        background-size: 700px;
+        background-size: 730px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px){
+    .hi-there-holder, .im-holder, .duong-minh-chinh-holder{
+        height: 130px;
+    }
+
+    .hi-there-img-holder{
+        background-size: 870px;
+    }
+
+    .im-img-holder{
+        background-size: 840px;
+    }
+
+    .duong-minh-chinh-img-holder{
+        background-size: 890px;
     }
 }

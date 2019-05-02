@@ -14,7 +14,6 @@ export default class Intro extends React.Component{
                     <div className='hi-there-img-holder' id="hi-there-img-holder">
 
                     </div>
-                    {/* <img src='/assets/images/HiThere.png' alt="Hithere"></img> */}
                 </div>
 
 
@@ -28,23 +27,6 @@ export default class Intro extends React.Component{
                     <div className='duong-minh-chinh-img-holder'>
 
                     </div>
-                    {/* <div className='duong-holder'>
-                        <div className='duong-img-holder'>
-
-                        </div>
-                    </div>
-                    
-                    <div className='minh-holder'>
-                        <div className='minh-img-holder'>
-                        
-                        </div>
-                    </div>
-
-                    <div className='chinh-holder'>
-                        <div className='chinh-img-holder'>
-                        
-                        </div>
-                    </div> */}
                 </div>
             </div>
             </>
