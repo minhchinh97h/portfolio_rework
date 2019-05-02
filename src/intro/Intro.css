@@ -74,6 +74,11 @@
 }
 
 @media only screen and (max-width: 374px){
+    .intro-container{
+        height: 100%;
+        top: 0;
+    }
+
     .hi-there-holder, .im-holder, .duong-minh-chinh-holder{
         height: 100px;
     }
@@ -92,6 +97,11 @@
 }
 
 @media only screen and (min-width: 375px) and (max-width: 424px){
+    .intro-container{
+        height: 100%;
+        top: 0;
+    }
+
     .hi-there-holder, .im-holder, .duong-minh-chinh-holder{
         height: 100px;
     }
@@ -110,6 +120,11 @@
 }
 
 @media only screen and (min-width: 425px) and (max-width: 767px){
+    .intro-container{
+        height: 100%;
+        top: 0;
+    }
+    
     .hi-there-holder, .im-holder, .duong-minh-chinh-holder{
         height: 100px;
     }

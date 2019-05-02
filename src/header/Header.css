@@ -1,9 +1,26 @@
+@keyframes header-visible {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to{
+        transform: translateY(0);
+    }
+}
+
 .header-container{
     position: fixed;
-    height: 100px;
+    height: 100%;
     width: 100%;
+    transform: translateX(100%);
     display: flex;
     justify-content: flex-end;
+    transform: translateY(-100%);
+    animation-name: header-visible;
+    animation-duration: 1.5s;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
 }
 
 .left-links-container{
