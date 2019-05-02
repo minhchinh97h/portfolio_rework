@@ -22,7 +22,6 @@
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-timing-function: ease; */
-    width: 100%;
     height: 25%;
 }
 
@@ -62,16 +61,82 @@
 }
 
 
-@media only screen and (max-width: 425px){
+
+
+@media only screen and (max-width: 320px){
     .intro-container{
-        height: 480px;
+        height: 380px;
     }
 
-    .hi-there-img-holder, .im-img-holder{
-        background-size: 300px;
+    .hi-there-holder, .im-holder{
+        height: 70px;
+    }
+
+    .duong-minh-chinh-holder{
+        height: 80px;
+    }
+
+    .hi-there-img-holder{
+        background-size: 280px;
+    }
+
+    .im-img-holder{
+        background-size: 250px;
     }
 
     .duong-minh-chinh-img-holder{
         background-size: 300px;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 424px){
+    .intro-container{
+        height: 380px;
+    }
+
+    .hi-there-holder, .im-holder{
+        height: 100px;
+    }
+
+    .duong-minh-chinh-holder{
+        height: 100px;
+    }
+
+    .hi-there-img-holder{
+        background-size: 340px;
+    }
+
+    .im-img-holder{
+        background-size: 310px;
+    }
+
+    .duong-minh-chinh-img-holder{
+        background-size: 360px;
+    }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 425px){
+    .intro-container{
+        height: 380px;
+    }
+
+    .hi-there-holder, .im-holder{
+        height: 100px;
+    }
+
+    .duong-minh-chinh-holder{
+        height: 100px;
+    }
+
+    .hi-there-img-holder{
+        background-size: 380px;
+    }
+
+    .im-img-holder{
+        background-size: 350px;
+    }
+
+    .duong-minh-chinh-img-holder{
+        background-size: 400px;
     }
 }
