@@ -5,12 +5,13 @@
     padding: 0 10%;
 }
 
-
 .exp-holder{
     width: 100%;
     height: 400px;
     position: relative;
     display: flex;
+    cursor: pointer;
+    margin: 200px 0;
 }
 
 .company-logo-holder{
@@ -18,7 +19,7 @@
     height: 100%;
 }
 
-.company-logo-image-holder{
+.vamk-logo-image-holder{
     height: 100%;
     background-image: url("/assets/images/VamkLogo.png");
     background-size: 55%;
@@ -45,7 +46,16 @@
 .stack-under-holder{
     height: 20%;
     width: 100%;
-    background-color: red;
     position: absolute;
     bottom: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.react-holder, .javascript-holder, .html-holder, .css-holder, .threejs-holder{
+    display: inline-block;
+    font-family: -apple-system, BlinkMacSystemFont, "minecraftmedium", "Playfair Display",  "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    font-size: 25px;
 }
