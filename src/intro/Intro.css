@@ -1,11 +1,12 @@
 .intro-container{
     width: 100%;
-    height: calc(100% - 100px);
+    height: 100%;
     top: 100px;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 10%;
 }
 
 @keyframes opacity-ani{

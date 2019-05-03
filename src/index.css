@@ -1,3 +1,18 @@
+@font-face {
+  font-family: 'minecraftmedium';
+  src: url('/assets/fonts/minecraft-font/minecraft-webfont.woff2') format('woff2'),
+       url('/assets/fonts/minecraft-font/minecraft-webfont.woff') format('woff');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sh_pinscherregular';
+  src: url('/assets/fonts/shpinscher-font/shpinscher-regular-webfont.woff2') format('woff2'),
+       url('/assets/fonts/shpinscher-font/shpinscher-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root{
   --primary-color: #8C0404
 }
@@ -14,7 +29,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  font-family: -apple-system, BlinkMacSystemFont, "sh_pinscherregular", "minecraftmedium", "Playfair Display",  "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -35,3 +50,4 @@ code {
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 }
+
