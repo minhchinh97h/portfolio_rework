@@ -21,9 +21,19 @@
 
 .vamk-logo-image-holder{
     height: 100%;
+    width: 60%;
     background-image: url("/assets/images/VamkLogo.png");
-    background-size: 55%;
-    background-position: left;
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.globuzzer-logo-image-holder{
+    height: 80%;
+    width: 60%;
+    background-image: url("/assets/images/GlobuzzerLogo.png");
+    background-size: 280px;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -52,7 +62,7 @@
     justify-content: space-around;
 }
 
-.react-holder, .javascript-holder, .html-holder, .css-holder, .threejs-holder{
+.stack-holder{
     display: inline-block;
     font-family: -apple-system, BlinkMacSystemFont, "minecraftmedium", "Playfair Display",  "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
