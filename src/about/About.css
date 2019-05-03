@@ -4,12 +4,35 @@
     position: relative;
 }
 
-.text-holder{
+.content-holder{
     position: relative;
     top: 100px;
-    width: 100%;
-    height: 50%;
+    width: 1200px;
+    margin: auto auto;
     font-size: 50px;
-    padding: 30px;
     line-height: 80px;
+}
+
+.right-quotation-mark-holder{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    transform: translate(-100%, -100%);
+}
+
+.right-quotation-mark-img-holder{
+
+}
+
+.text-holder{
+    text-align: justify;
+}
+
+.left-quotation-mark-holder{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    top: 460px;
 }
