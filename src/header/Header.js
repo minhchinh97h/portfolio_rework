@@ -59,7 +59,7 @@ export default class Header extends React.Component{
                     </div>
 
                     <div className='link-holder'>
-                        <a href="#">Work</a>
+                        <a href="#">Experience</a>
 
                         <div className='highlight-indicator'></div>
                     </div>

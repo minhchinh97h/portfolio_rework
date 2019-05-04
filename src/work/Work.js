@@ -50,7 +50,7 @@ export default class Work extends React.Component{
                         </div>
                     </div>
                 </div>
-                
+
                 <div className='exp-holder'>
                     <div className='company-logo-holder'>
                         <div className='vamk-logo-image-holder'>
@@ -86,7 +86,76 @@ export default class Work extends React.Component{
                     </div>
                 </div>
 
-                
+                <div className='exp-holder'>
+                    <div className='company-logo-holder'>
+                        <div className='fpt-logo-image-holder'>
+
+                        </div>
+                    </div>
+                    <div className='right-info-holder'>
+                        <div className='position-holder'>
+                            <p>IoT Software Developer</p>
+                        </div>
+                    </div>
+
+                    <div className='stack-under-holder'>
+                        <div className='stack-holder'>
+                            <p>Angularjs</p>
+                        </div>  
+
+                        <div className='stack-holder'>
+                            <p>Javascript</p>
+                        </div>
+
+                        <div className='stack-holder'>
+                            <p>HTML</p>
+                        </div>
+
+                        <div className='stack-holder'>
+                            <p>CSS</p>
+                        </div>
+
+                        <div className='stack-holder'>
+                            <p>Mindsphere APIs</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='exp-holder'>
+                    <div className='company-logo-holder'>
+                        <div className='fpt-logo-image-holder'>
+
+                        </div>
+                    </div>
+                    <div className='right-info-holder'>
+                        <div className='position-holder'>
+                            <p>IoT Software Developer</p>
+                        </div>
+                    </div>
+
+                    <div className='stack-under-holder'>
+                        <div className='stack-holder'>
+                            <p>Angularjs</p>
+                        </div>  
+
+                        <div className='stack-holder'>
+                            <p>Javascript</p>
+                        </div>
+
+                        <div className='stack-holder'>
+                            <p>HTML</p>
+                        </div>
+
+                        <div className='stack-holder'>
+                            <p>CSS</p>
+                        </div>
+
+                        <div className='stack-holder'>
+                            <p>Mindsphere APIs</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             </>
         )

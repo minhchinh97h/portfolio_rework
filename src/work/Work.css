@@ -19,22 +19,27 @@
     height: 100%;
 }
 
-.vamk-logo-image-holder{
+.vamk-logo-image-holder, .globuzzer-logo-image-holder, .fpt-logo-image-holder{
     height: 100%;
     width: 60%;
-    background-image: url("/assets/images/VamkLogo.png");
-    background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
 }
 
+.vamk-logo-image-holder{
+    background-image: url("/assets/images/VamkLogo.png");
+    background-size: 75%;
+}
+
 .globuzzer-logo-image-holder{
     height: 80%;
-    width: 60%;
     background-image: url("/assets/images/GlobuzzerLogo.png");
-    background-size: 280px;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-size: 250px;
+}
+
+.fpt-logo-image-holder{
+    background-image: url("/assets/images/FPTLogo.png");
+    background-size: 50%;
 }
 
 .right-info-holder{
