@@ -8,6 +8,15 @@ export default class Work extends React.Component{
         return(
             <>
             <div className='work-container'>
+                <div className='separate-exp-holder'>
+                    <div className='separate-left-line'>
+
+                    </div>
+                    <p>1</p>
+                    <div className='separate-right-line'>
+
+                    </div>
+                </div>
                 <div className='exp-holder'>
                     <div className='company-logo-holder'>
                         <div className='globuzzer-logo-image-holder'>
@@ -62,6 +71,16 @@ export default class Work extends React.Component{
                     </div>
                 </div>
 
+                
+                <div className='separate-exp-holder'>
+                    <div className='separate-left-line'>
+
+                    </div>
+                    <p>2</p>
+                    <div className='separate-right-line'>
+
+                    </div>
+                </div>
                 <div className='exp-holder'>
                     <div className='company-logo-holder'>
                         <div className='wwo-logo-image-holder'>
@@ -104,7 +123,17 @@ export default class Work extends React.Component{
                         </div>
                     </div>
                 </div>
+                
 
+                <div className='separate-exp-holder'>
+                    <div className='separate-left-line'>
+
+                    </div>
+                    <p>3</p>
+                    <div className='separate-right-line'>
+
+                    </div>
+                </div>
                 <div className='exp-holder'>
                     <div className='company-logo-holder'>
                         <div className='vamk-logo-image-holder'>
@@ -150,7 +179,16 @@ export default class Work extends React.Component{
                         </div>
                     </div>
                 </div>
+                
+                <div className='separate-exp-holder'>
+                    <div className='separate-left-line'>
 
+                    </div>
+                    <p>4</p>
+                    <div className='separate-right-line'>
+
+                    </div>
+                </div>
                 <div className='exp-holder'>
                     <div className='company-logo-holder'>
                         <div className='fpt-logo-image-holder'>
@@ -192,7 +230,16 @@ export default class Work extends React.Component{
                         </div>
                     </div>
                 </div>
+                
+                <div className='separate-exp-holder'>
+                    <div className='separate-left-line'>
 
+                    </div>
+                    <p>5</p>
+                    <div className='separate-right-line'>
+
+                    </div>
+                </div>
                 <div className='exp-holder'>
                     <div className='company-logo-holder'>
                         <div className='tk-logo-image-holder'>

@@ -10,7 +10,7 @@
     position: relative;
     display: flex;
     cursor: default;
-    margin: 300px 0;
+    margin-bottom: 300px;
 }
 
 .company-logo-holder{
@@ -80,6 +80,10 @@
     .tk-logo-image-holder{
         background-size: 90%;
     }
+
+    .wwo-logo-image-holder{
+        background-size: 400px;
+    }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1439px){
@@ -132,6 +136,24 @@
     sans-serif;
 }
 
+.separate-exp-holder{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.separate-left-line, .separate-right-line{
+    width: 45%;
+    height: 1px;
+    background-color: black;
+}
+
+.separate-exp-holder p {
+    font-size: 50px;
+    margin: 0;
+}
+
 @media only screen and (max-width: 767px){
     .right-info-holder{
         right: unset;
@@ -160,6 +182,11 @@
     .stack-holder p {
         margin: 0px;
     }
+
+    .separate-exp-holder p {
+        font-size: 32px;
+        margin: 0;
+    }
 }
 
 @media only screen and (min-width: 426px) and (max-width: 767px){
@@ -176,6 +203,11 @@
     .stack-holder{
         margin: 0px 2px;
         font-size: 16px;
+    }
+
+    .separate-exp-holder p {
+        font-size: 50px;
+        margin: 0;
     }
 }
 
@@ -198,6 +230,10 @@
         margin: 0px 5px;
         font-size: 18px;
     }
+
+    .separate-exp-holder{
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 1440px){
@@ -216,3 +252,4 @@
         font-size: 25px;
     }
 }
+

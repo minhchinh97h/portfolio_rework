@@ -11,7 +11,13 @@ function App() {
     <>
     <Header />
     <Intro />
+    <div style={{height: "100%"}}>
+
+    </div>
     <About />
+    <div style={{height: "100%"}}>
+
+    </div>
     <Work />
     </>
   );
