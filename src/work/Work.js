@@ -29,6 +29,14 @@ export default class Work extends React.Component{
                         </div>  
 
                         <div className='stack-holder'>
+                            <p>Expressjs</p>
+                        </div>
+
+                        <div className='stack-holder'>
+                            <p>PHP</p>
+                        </div>
+
+                        <div className='stack-holder'>
                             <p>Javascript</p>
                         </div>
 
@@ -49,7 +57,7 @@ export default class Work extends React.Component{
                         </div>
 
                         <div className='stack-holder'>
-                            <p>Google Places &amp; Maps APIs</p>
+                            <p>Google APIs</p>
                         </div>
                     </div>
                 </div>
@@ -63,7 +71,7 @@ export default class Work extends React.Component{
 
                     <div className='right-info-holder'>
                         <div className='position-holder'>
-                            <p>Personal Project</p>
+                            <p>Personal Web Application</p>
                             <span><p className="position-smaller-text">
                                 &ldquo;Werewolves Online&rdquo; is an online web application focusing on helping people play 'The werewolves of Millers Hollow' without any actual physical contacts.
                             </p></span>
@@ -77,6 +85,10 @@ export default class Work extends React.Component{
                         
                         <div className='stack-holder'>
                             <p>MongoDB/Mongoose/Mlab</p>
+                        </div>
+
+                        <div className='stack-holder'>
+                            <p>Expressjs</p>
                         </div>
 
                         <div className='stack-holder'>
@@ -114,11 +126,19 @@ export default class Work extends React.Component{
                         </div>  
 
                         <div className='stack-holder'>
+                            <p>HTML</p>
+                        </div>
+
+                        <div className='stack-holder'>
                             <p>Javascript</p>
                         </div>
 
                         <div className='stack-holder'>
-                            <p>HTML</p>
+                            <p>Expressjs</p>
+                        </div>
+
+                        <div className='stack-holder'>
+                            <p>Oracle MySQL</p>
                         </div>
 
                         <div className='stack-holder'>
@@ -150,6 +170,10 @@ export default class Work extends React.Component{
                         <div className='stack-holder'>
                             <p>Angularjs</p>
                         </div>  
+
+                        <div className='stack-holder'>
+                            <p>Expressjs</p>
+                        </div>
 
                         <div className='stack-holder'>
                             <p>Javascript</p>
