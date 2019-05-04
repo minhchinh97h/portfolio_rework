@@ -10,7 +10,7 @@
     height: 400px;
     position: relative;
     display: flex;
-    cursor: pointer;
+    cursor: default;
     margin: 200px 0;
 }
 
@@ -19,7 +19,7 @@
     height: 100%;
 }
 
-.vamk-logo-image-holder, .globuzzer-logo-image-holder, .fpt-logo-image-holder{
+.vamk-logo-image-holder, .globuzzer-logo-image-holder, .fpt-logo-image-holder, .wwo-logo-image-holder{
     height: 100%;
     width: 60%;
     background-position: center;
@@ -42,20 +42,40 @@
     background-size: 50%;
 }
 
+.wwo-logo-image-holder{
+    background-image: url("/assets/images/WwLogo.png");
+    background-size: 500px;
+}
+
 .right-info-holder{
     position: absolute;
     right: 0;
     top: 0;
     height: 100%;
     display: flex;
-    align-items: center;
+    width: 40%;
 }
 
 .position-holder{
-    font-family: -apple-system, BlinkMacSystemFont, "minecraftmedium", "Playfair Display",  "Segoe UI", "Roboto", "Oxygen",
+    font-family: -apple-system, BlinkMacSystemFont, "sh_pinscherregular", "minecraftmedium", "Playfair Display",  "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
     font-size: 50px;
+}
+
+.position-holder p {
+    margin: 0;
+}
+
+.position-smaller-text{
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.position-holder a {
+    text-decoration: none;
+    color: var(--primary-color)
 }
 
 .stack-under-holder{
