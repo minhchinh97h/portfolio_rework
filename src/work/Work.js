@@ -92,7 +92,7 @@ export default class Work extends React.Component{
                         </div>
                     </div>
                 </div>
-                
+
                 <div className='exp-holder'>
                     <div className='company-logo-holder'>
                         <div className='vamk-logo-image-holder'>
@@ -169,7 +169,43 @@ export default class Work extends React.Component{
                     </div>
                 </div>
 
-                
+                <div className='exp-holder'>
+                    <div className='company-logo-holder'>
+                        <div className='tk-logo-image-holder'>
+
+                        </div>
+                    </div>
+                    <div className='right-info-holder'>
+                        <div className='position-holder'>
+                            <p>Personal Indie Game</p>
+                            <span><p className="position-smaller-text">
+                                &ldquo;Tikeri On The Run&rdquo; is a 2D indie game created based on the concept of Capcom's Megaman Series. 
+                            </p></span>
+                        </div>
+                    </div>
+
+                    <div className='stack-under-holder'>
+                        <div className='stack-holder'>
+                            <p>Unity3D</p>
+                        </div>
+
+                        <div className='stack-holder'>
+                            <p>C#/.NET</p>
+                        </div>  
+
+                        <div className='stack-holder'>
+                            <p>Digital Pixel Design</p>
+                        </div>
+
+                        <div className='stack-holder'>
+                            <p>Window Standalone</p>
+                        </div>
+
+                        <div className='stack-holder'>
+                            <p>2D Animations</p>
+                        </div>
+                    </div>
+                </div>
 
             </div>
             </>
