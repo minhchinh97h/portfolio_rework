@@ -71,7 +71,7 @@ export default class Work extends React.Component{
 
                     <div className='right-info-holder'>
                         <div className='position-holder'>
-                            <p>Personal Web Application</p>
+                            <p>Personal Web App</p>
                             <span><p className="position-smaller-text">
                                 &ldquo;Werewolves Online&rdquo; is an online web application focusing on helping people play 'The werewolves of Millers Hollow' without any actual physical contacts.
                             </p></span>
@@ -113,7 +113,7 @@ export default class Work extends React.Component{
                     </div>
                     <div className='right-info-holder'>
                         <div className='position-holder'>
-                            <p>Front End/Core Developer</p>
+                            <p>Core Developer</p>
                             <span><p className="position-smaller-text">
                                 In charge of building and developing core 3D functionalities with Threejs framework for the project 'Configurator 3D'.
                             </p></span>

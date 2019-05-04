@@ -38,27 +38,6 @@
     }
 }
 
-
-.right-quotation-mark-holder{
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    position: absolute;
-    transform: translate(-100%, -100%);
-}
-
-.right-quotation-mark-img-holder{
-
-}
-
 .text-holder{
     text-align: justify;
-}
-
-.left-quotation-mark-holder{
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    right: 0;
-    top: 460px;
 }
