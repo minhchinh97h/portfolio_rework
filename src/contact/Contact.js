@@ -5,6 +5,7 @@ import "./Contact.css"
 export default class Contact extends React.Component{
     render(){
         return(
+            <>
             <div className="contact-container">
                 <div className="top-left-contact-holder">
                     <div className="contact-title-holder">
@@ -39,7 +40,15 @@ export default class Contact extends React.Component{
                     </div>
 
                 </div>
+
+                
             </div>
+            
+            <div className="rights-holder">
+                <p><i className="far fa-copyright"></i> 2019 all rights reserved. Designed and developed by Duong Minh Chinh.</p>
+            </div>
+
+            </>
         )
     }
 }

@@ -1,12 +1,12 @@
 .contact-container{
-    height: 100%;
+    height: 800px;
     width: 100%;
     padding: 0 10%;
+    padding-top: 100px;
     position: relative;
 }
 
 .top-left-contact-holder{
-    top: 100px;
     position: relative;
 }
 
@@ -18,6 +18,9 @@
 }
 
 @media only screen and (max-width: 425px){
+    .contact-container{
+        height: 700px;
+    }
     .top-left-contact-holder{
         font-size: 28px;
     }
@@ -26,6 +29,18 @@
 @media only screen and (min-width: 426px){
     .top-left-contact-holder{
         font-size: 36px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .top-left-contact-holder{
+        font-size: 42px;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .top-left-contact-holder{
+        font-size: 50px;
     }
 }
 
@@ -76,6 +91,28 @@
     }
 }
 
+@media only screen and (min-width: 768px){
+    .mail-holder, .linkedin-holder, .github-holder{
+        height: 80px;
+    }
+
+    .mail-img-holder, .linkedin-img-holder, .github-img-holder{
+        width: 80px;
+        background-size: 80px;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .mail-holder, .linkedin-holder, .github-holder{
+        height: 100px;
+    }
+
+    .mail-img-holder, .linkedin-img-holder, .github-img-holder{
+        width: 100px;
+        background-size: 100px;
+    }
+}
+
 .mail-img-holder{
     background-image: url("/assets/images/MailLogo.png");
 }
@@ -88,11 +125,7 @@
     background-image: url("/assets/images/GitHubLogo.png");
 }
 
-.mail-text-holder, .linkedin-text-holder, .github-text-holder{
-    font-size: 24px;
-    margin-left: 20px;
-    width: 100%;
-}
+
 
 @media only screen and (max-width: 425px){
     .mail-text-holder, .linkedin-text-holder, .github-text-holder{
@@ -108,4 +141,29 @@
         margin-left: 10px;
         width: 100%;
     }
+}
+
+@media only screen and (min-width: 768px){
+    .mail-text-holder, .linkedin-text-holder, .github-text-holder{
+        font-size: 22px;
+        margin-left: 10px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .mail-text-holder, .linkedin-text-holder, .github-text-holder{
+        font-size: 24px;
+        margin-left: 20px;
+        width: 100%;
+    }
+}
+
+.rights-holder{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10%;
 }
