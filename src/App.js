@@ -12,23 +12,8 @@ function App() {
     <>
     <Header />
     <Intro />
-
-    <div style={{height: "50%"}}>
-
-    </div>
-
     <About />
-
-    <div style={{height: "50%"}}>
-
-    </div>
-
     <Work />
-
-    <div style={{height: "50%"}}>
-
-    </div>
-
     <Contact />
     </>
   );

@@ -3,6 +3,7 @@
     position: relative;
     padding: 0 10%;
     padding-top: 100px;
+    margin-top: 600px;
 }
 
 .work-title-container p{
@@ -12,6 +13,27 @@
     sans-serif;
     font-weight: 1000;
     margin-bottom: 200px;
+}
+
+@media only screen and (max-width: 425px){
+    .work-title-container p{
+        font-size: 50px;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 426px){
+    .work-title-container p{
+        font-size: 60px;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .work-title-container p{
+        font-size: 70px;
+        margin: 0;
+    }
 }
 
 .exp-holder{

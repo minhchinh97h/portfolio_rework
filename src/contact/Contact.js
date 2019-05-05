@@ -8,7 +8,7 @@ export default class Contact extends React.Component{
             <>
             <div className="contact-container" id="contact-container">
                 <div className="contact-title-container">
-                    <p>Contact Me</p>
+                    <p>CONTACT</p>
                 </div>
                 <div className="top-left-contact-holder">
                     <div className="contact-title-holder">

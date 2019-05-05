@@ -1,13 +1,13 @@
 import React from 'react'
 import './About.css'
+import { tsConstructorType } from '@babel/types';
 
 export default class About extends React.Component{
-
     render(){
         return(
             <div className='about-container' id="about-container">
                 <div className='about-title-container'>
-                    <p>ABOUT ME</p>
+                    <p>ABOUT</p>
                 </div>
 
                 <div className='content-holder'>

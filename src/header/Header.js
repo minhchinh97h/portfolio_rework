@@ -37,17 +37,19 @@ export default class Header extends React.Component{
             delay: 0,
             smooth: 'easeInOutQuart'
         })
+        // window.scrollTo(0, yOffSet)
     }
 
     componentDidMount(){
         mobileHolderNode = document.getElementById("mobile-right-tab-holder")
 
-        document.addEventListener("click", (e) => {
-            if(!this.IsDescendantOrIden(mobileHolderNode, e.target) && e.target.id !== "hamburger-button"){
-                this.CloseMobileRightTab()
-            }
-        })
+        
 
+        // document.addEventListener("click", (e) => {
+        //     if(!this.IsDescendantOrIden(mobileHolderNode, e.target) && e.target.id !== "hamburger-button"){
+        //         this.CloseMobileRightTab()
+        //     }
+        // })
     }
 
     render(){
@@ -68,7 +70,7 @@ export default class Header extends React.Component{
                     </div>
 
                     <div className='link-holder'>
-                        <p onClick={this.SmoothlyScrollTo.bind(this, 'work-container')}>Experience</p>
+                        <p onClick={this.SmoothlyScrollTo.bind(this, 'work-container')}>Work</p>
 
                         <div className='highlight-indicator'></div>
                     </div>

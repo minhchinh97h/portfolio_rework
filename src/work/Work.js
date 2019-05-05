@@ -9,7 +9,7 @@ export default class Work extends React.Component{
             <>
             <div className='work-container' id="work-container">
                 <div className='work-title-container'>
-                    <p>My Experience</p>
+                    <p>WORK</p>
                 </div>
                 <div className='separate-exp-holder'>
                     <div className='separate-left-line'>

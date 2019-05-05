@@ -3,10 +3,7 @@
     position: relative;
     padding: 0 10%;
     padding-top: 100px;
-}
-
-.about-title-container{
-    
+    margin-top: 600px;
 }
 
 .about-title-container p {
@@ -16,6 +13,27 @@
     sans-serif;
     margin: 0;
     font-weight: 1000;
+}
+
+@media only screen and (max-width: 425px){
+    .about-title-container p{
+        font-size: 50px;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 426px){
+    .about-title-container p{
+        font-size: 60px;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .about-title-container p{
+        font-size: 70px;
+        margin: 0;
+    }
 }
 
 .content-holder{

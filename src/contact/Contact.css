@@ -3,6 +3,7 @@
     padding: 0 10%;
     padding-top: 100px;
     position: relative;
+    margin-top: 600px;
 }
 
 .contact-title-container p{
@@ -13,7 +14,26 @@
     font-weight: 1000;
 }
 
+@media only screen and (max-width: 425px){
+    .contact-title-container p{
+        font-size: 50px;
+        margin: 0;
+    }
+}
 
+@media only screen and (min-width: 426px){
+    .contact-title-container p{
+        font-size: 60px;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .contact-title-container p{
+        font-size: 70px;
+        margin: 0;
+    }
+}
 
 .top-left-contact-holder{
     position: relative;
@@ -169,4 +189,5 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 50px;
 }
