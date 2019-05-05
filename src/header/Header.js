@@ -1,17 +1,23 @@
 import React from 'react'
 import './Header.css'
 import {animateScroll} from 'react-scroll'
-let mobileHolderNode
+
+let mobileHolderNode,
+    keys = {37: 1, 38: 1, 39: 1, 40: 1};
 
 export default class Header extends React.Component{
 
     OpenMobileRightTab = () => {
         mobileHolderNode.classList.remove("mrt-visible")
         mobileHolderNode.classList.add("mrt-visible")
+
+        document.body.classList.remove("disable-scrolling")
+        document.body.classList.add("disable-scrolling")
     }
 
     CloseMobileRightTab = () => {
         mobileHolderNode.classList.remove("mrt-visible")
+        document.body.classList.remove("disable-scrolling")
     }
 
     IsDescendantOrIden = (parent, child) => {
@@ -37,7 +43,6 @@ export default class Header extends React.Component{
             delay: 0,
             smooth: 'easeInOutQuart'
         })
-        // window.scrollTo(0, yOffSet)
     }
 
     componentDidMount(){
@@ -88,6 +93,9 @@ export default class Header extends React.Component{
             </div>
 
             <div className='mobile-right-tab-holder' id="mobile-right-tab-holder">
+                <div className='underlying-mobile-top-links' onClick={this.CloseMobileRightTab}>
+
+                </div>
                 <div className='mobile-top-links-container'>
                     <div className='mobile-link-holder'>
                         <a href="#">Intro</a>
@@ -105,6 +113,7 @@ export default class Header extends React.Component{
                         <a href="#">Intro</a>
                     </div>
                 </div>
+                
             </div>
             </>
         )

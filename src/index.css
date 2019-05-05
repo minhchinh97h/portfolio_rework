@@ -53,4 +53,11 @@ code {
     monospace;
 }
 
+#root {
+  overflow-x: hidden;
+}
 
+.disable-scrolling{
+  overflow: hidden;
+  position: fixed;
+}
