@@ -17,6 +17,18 @@
     font-size: 70px;
 }
 
+@media only screen and (max-width: 425px){
+    .top-left-contact-holder{
+        font-size: 28px;
+    }
+}
+
+@media only screen and (min-width: 426px){
+    .top-left-contact-holder{
+        font-size: 36px;
+    }
+}
+
 .contact-title-holder{
     font-family: -apple-system, BlinkMacSystemFont, "sh_pinscherregular", "minecraftmedium", "Playfair Display",  "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -30,15 +42,38 @@
     height: 100px;
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .mail-img-holder, .linkedin-img-holder, .github-img-holder{
     width: 100px;
-    height: 100px;
+    height: 100%;
     
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100px;
     background-position: center;
+}
+
+@media only screen and (max-width: 425px){
+    .mail-holder, .linkedin-holder, .github-holder{
+        height: 70px;
+    }
+
+    .mail-img-holder, .linkedin-img-holder, .github-img-holder{
+        width: 50px;
+        background-size: 50px;
+    }
+}
+
+@media only screen and (min-width: 426px){
+    .mail-holder, .linkedin-holder, .github-holder{
+        height: 70px;
+    }
+
+    .mail-img-holder, .linkedin-img-holder, .github-img-holder{
+        width: 70px;
+        background-size: 60px;
+    }
 }
 
 .mail-img-holder{
@@ -56,4 +91,21 @@
 .mail-text-holder, .linkedin-text-holder, .github-text-holder{
     font-size: 24px;
     margin-left: 20px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 425px){
+    .mail-text-holder, .linkedin-text-holder, .github-text-holder{
+        font-size: 14px;
+        margin-left: 10px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 426px){
+    .mail-text-holder, .linkedin-text-holder, .github-text-holder{
+        font-size: 18px;
+        margin-left: 10px;
+        width: 100%;
+    }
 }
