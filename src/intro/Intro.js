@@ -9,7 +9,7 @@ export default class Intro extends React.Component{
     render(){
         return(
             <>
-            <div className='intro-container'>
+            <div className='intro-container' id="intro-container">
                 <div className='hi-there-holder'>
                     <div className='hi-there-img-holder' id="hi-there-img-holder">
 

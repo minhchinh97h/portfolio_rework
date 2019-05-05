@@ -1,10 +1,19 @@
 .contact-container{
-    height: 800px;
     width: 100%;
     padding: 0 10%;
     padding-top: 100px;
     position: relative;
 }
+
+.contact-title-container p{
+    font-size: 70px;
+    font-family: -apple-system, BlinkMacSystemFont, "minecraftmedium", "Playfair Display",  "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    font-weight: 1000;
+}
+
+
 
 .top-left-contact-holder{
     position: relative;
@@ -18,9 +27,6 @@
 }
 
 @media only screen and (max-width: 425px){
-    .contact-container{
-        height: 700px;
-    }
     .top-left-contact-holder{
         font-size: 28px;
     }
@@ -49,7 +55,6 @@
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
     width: 100%;
-    
 }
 
 .mail-holder, .linkedin-holder, .github-holder{
@@ -160,10 +165,8 @@
 }
 
 .rights-holder{
-    height: 100px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 10%;
 }

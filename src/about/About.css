@@ -1,11 +1,25 @@
 .about-container{
     width: 100%;
     position: relative;
+    padding: 0 10%;
+    padding-top: 100px;
+}
+
+.about-title-container{
+    
+}
+
+.about-title-container p {
+    font-size: 70px;
+    font-family: -apple-system, BlinkMacSystemFont, "minecraftmedium", "Playfair Display",  "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    margin: 0;
+    font-weight: 1000;
 }
 
 .content-holder{
     position: relative;
-    top: 100px;
     margin: auto auto;
 
 }

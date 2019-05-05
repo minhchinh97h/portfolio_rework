@@ -7,7 +7,10 @@ export default class Work extends React.Component{
     render(){
         return(
             <>
-            <div className='work-container'>
+            <div className='work-container' id="work-container">
+                <div className='work-title-container'>
+                    <p>My Experience</p>
+                </div>
                 <div className='separate-exp-holder'>
                     <div className='separate-left-line'>
 

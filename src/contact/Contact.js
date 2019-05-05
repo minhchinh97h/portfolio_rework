@@ -6,7 +6,10 @@ export default class Contact extends React.Component{
     render(){
         return(
             <>
-            <div className="contact-container">
+            <div className="contact-container" id="contact-container">
+                <div className="contact-title-container">
+                    <p>Contact Me</p>
+                </div>
                 <div className="top-left-contact-holder">
                     <div className="contact-title-holder">
                         <p>&ldquo;I currently reside in Helsinki, Finland and welcome all working opportunities to come.&rdquo;</p>
@@ -41,12 +44,12 @@ export default class Contact extends React.Component{
 
                 </div>
 
-                
+                <div className="rights-holder">
+                    <p><i className="far fa-copyright"></i> 2019 all rights reserved. Designed and developed by Duong Minh Chinh.</p>
+                </div>
             </div>
+
             
-            <div className="rights-holder">
-                <p><i className="far fa-copyright"></i> 2019 all rights reserved. Designed and developed by Duong Minh Chinh.</p>
-            </div>
 
             </>
         )

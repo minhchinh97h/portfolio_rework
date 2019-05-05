@@ -47,25 +47,25 @@ export default class Header extends React.Component{
             <div className='header-container'>
                 <div className='right-links-container'>
                     <div className='link-holder'>
-                        <a href="#">Intro</a>
+                        <a href="#intro-container">Intro</a>
 
                         <div className='highlight-indicator'></div>
                     </div>
 
                     <div className='link-holder'>
-                        <a href="#">About</a>
+                        <a href="#about-container">About</a>
 
                         <div className='highlight-indicator'></div>
                     </div>
 
                     <div className='link-holder'>
-                        <a href="#">Experience</a>
+                        <a href="#work-container">Experience</a>
 
                         <div className='highlight-indicator'></div>
                     </div>
 
                     <div className='link-holder'>
-                        <a href="#">Contact</a>
+                        <a href="#contact-container">Contact</a>
 
                         <div className='highlight-indicator'></div>
                     </div>
