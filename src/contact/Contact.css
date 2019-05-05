@@ -7,8 +7,8 @@
 
 .contact-title-container p{
     font-size: 70px;
-    font-family: -apple-system, BlinkMacSystemFont, "minecraftmedium", "Playfair Display",  "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    font-family: "minecraftmedium", "Playfair Display",  "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", -apple-system, BlinkMacSystemFont, 
     sans-serif;
     font-weight: 1000;
 }
@@ -20,8 +20,8 @@
 }
 
 .top-left-contact-holder{
-    font-family: -apple-system, BlinkMacSystemFont, "minecraftmedium", "Playfair Display",  "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    font-family: "minecraftmedium", "Playfair Display",  "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", -apple-system, BlinkMacSystemFont, 
     sans-serif;
     font-size: 70px;
 }
@@ -51,8 +51,8 @@
 }
 
 .contact-title-holder{
-    font-family: -apple-system, BlinkMacSystemFont, "sh_pinscherregular", "minecraftmedium", "Playfair Display",  "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    font-family: "sh_pinscherregular", "minecraftmedium", "Playfair Display",  "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", -apple-system, BlinkMacSystemFont, 
     sans-serif;
     width: 100%;
 }

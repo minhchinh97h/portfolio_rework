@@ -1,7 +1,6 @@
 import React from 'react'
-
 import './Header.css'
-
+import {animateScroll} from 'react-scroll'
 let mobileHolderNode
 
 export default class Header extends React.Component{
@@ -31,6 +30,15 @@ export default class Header extends React.Component{
         return false
     }
 
+    SmoothlyScrollTo = (id, e) => {
+        let yOffSet = document.getElementById(id).offsetTop
+        animateScroll.scrollTo(yOffSet, {
+            duration: 800,
+            delay: 0,
+            smooth: 'easeInOutQuart'
+        })
+    }
+
     componentDidMount(){
         mobileHolderNode = document.getElementById("mobile-right-tab-holder")
 
@@ -39,6 +47,7 @@ export default class Header extends React.Component{
                 this.CloseMobileRightTab()
             }
         })
+
     }
 
     render(){
@@ -47,25 +56,25 @@ export default class Header extends React.Component{
             <div className='header-container'>
                 <div className='right-links-container'>
                     <div className='link-holder'>
-                        <a href="#intro-container">Intro</a>
+                        <p >Intro</p>
 
                         <div className='highlight-indicator'></div>
                     </div>
 
                     <div className='link-holder'>
-                        <a href="#about-container">About</a>
+                        <p  onClick={this.SmoothlyScrollTo.bind(this, 'about-container')}>About</p>
 
                         <div className='highlight-indicator'></div>
                     </div>
 
                     <div className='link-holder'>
-                        <a href="#work-container">Experience</a>
+                        <p onClick={this.SmoothlyScrollTo.bind(this, 'work-container')}>Experience</p>
 
                         <div className='highlight-indicator'></div>
                     </div>
 
                     <div className='link-holder'>
-                        <a href="#contact-container">Contact</a>
+                        <p onClick={this.SmoothlyScrollTo.bind(this, 'contact-container')}>Contact</p>
 
                         <div className='highlight-indicator'></div>
                     </div>

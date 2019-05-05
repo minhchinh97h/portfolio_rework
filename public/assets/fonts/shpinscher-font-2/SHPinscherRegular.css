@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'SHPinscherRegular';
+    src: url('fonts/SHPinscherRegular.eot');
+    src: url('fonts/SHPinscherRegular.eot') format('embedded-opentype'),
+         url('fonts/SHPinscherRegular.woff2') format('woff2'),
+         url('fonts/SHPinscherRegular.woff') format('woff'),
+         url('fonts/SHPinscherRegular.ttf') format('truetype'),
+         url('fonts/SHPinscherRegular.svg#SHPinscherRegular') format('svg');
+}

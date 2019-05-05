@@ -3,6 +3,15 @@
   src: url('/assets/fonts/minecraft-font/minecraft-webfont.woff2') format('woff2'),
        url('/assets/fonts/minecraft-font/minecraft-webfont.woff') format('woff');
   font-style: normal;
+  font-weight: normal;
+
+  /* font-family: 'minecraftmedium';
+  src: url('/assets/fonts/minecraft-font-2/fonts/Minecraft.eot');
+  src: url('/assets/fonts/minecraft-font-2/fonts/Minecraft.eot') format('embedded-opentype')
+        url('/assets/fonts/minecraft-font-2/fonts/Minecraft.woff2') format('woff2'),
+        url('/assets/fonts/minecraft-font-2/fonts/Minecraft.woff') format('woff'),
+        url('/assets/fonts/minecraft-font-2/fonts/Minecraft.ttf') format('truetype'),
+        url('/assets/fonts/minecraft-font-2/fonts/Minecraft.svg#minecraftmedium') format('svg'); */
 }
 
 @font-face {
@@ -11,6 +20,14 @@
        url('/assets/fonts/shpinscher-font/shpinscher-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+
+  /* font-family: 'sh_pinscherregular';
+  src: url('/assets/fonts/shpinscher-font-2/fonts/SHPinscherRegular.eot');
+  src: url('/assets/fonts/shpinscher-font-2/fonts/SHPinscherRegular.eot') format('embedded-opentype'),
+        url('/assets/fonts/shpinscher-font-2/fonts/SHPinscherRegular.woff2') format('woff2'),
+        url('/assets/fonts/shpinscher-font-2/fonts/SHPinscherRegular.woff') format('woff'),
+        url('/assets/fonts/shpinscher-font-2/fonts/SHPinscherRegular.ttf') format('truetype'),
+        url('/assets/fonts/shpinscher-font-2/fonts/SHPinscherRegular.svg#sh_pinscherregular') format('svg'); */
 }
 
 :root{
@@ -29,8 +46,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "sh_pinscherregular", "minecraftmedium", "Playfair Display",  "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family:  "sh_pinscherregular", "minecraftmedium", "Playfair Display",  "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", -apple-system, BlinkMacSystemFont,
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
