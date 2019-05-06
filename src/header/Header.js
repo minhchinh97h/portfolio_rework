@@ -38,8 +38,23 @@ export default class Header extends React.Component{
             loadingTextNode.classList.remove("add-animate-loading-text")
         }, 3000)
 
+        if(id !== "intro-container"){
+            
+        }
 
-        
+        else{
+            document.getElementById("hi-there-holder").classList.remove("hi-there-holder-ani")
+            document.getElementById("im-holder").classList.remove("im-holder-ani")
+            document.getElementById("duong-minh-chinh-holder").classList.remove("duong-minh-chinh-holder-ani")
+            
+            setTimeout(() => {
+                
+
+                document.getElementById("hi-there-holder").classList.add("hi-there-holder-ani")
+                document.getElementById("im-holder").classList.add("im-holder-ani")
+                document.getElementById("duong-minh-chinh-holder").classList.add("duong-minh-chinh-holder-ani")
+            }, 3000)
+        }
     }
 
     componentDidMount(){
@@ -47,6 +62,10 @@ export default class Header extends React.Component{
         loadingScreenNode = document.getElementById("loading-screen")
         loadingTextNode = document.getElementById("loading-text")
         bodyNode = document.body
+    }
+
+
+    componentDidUpdate(prevProps, prevState){
     }
 
     render(){
