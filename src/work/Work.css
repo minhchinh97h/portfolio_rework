@@ -41,7 +41,7 @@
     height: 400px;
     position: relative;
     display: flex;
-    cursor: default;
+    cursor: pointer;
     margin-bottom: 300px;
 }
 

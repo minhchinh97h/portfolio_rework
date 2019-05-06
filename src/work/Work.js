@@ -3,6 +3,23 @@ import './Work.css'
 
 
 export default class Work extends React.Component{
+    
+    OpenNewWindow = (project, e) => {
+        if(project === 'globuzzer')
+            window.open('https://www.linkedin.com/in/chinh-duong-28679b157/')
+
+        else if(project === 'werewolves')
+            window.open('http://www.dmc-werewolves-pp.com/')
+
+        else if(project === '3D')
+            window.open('https://www.linkedin.com/in/chinh-duong-28679b157/detail/treasury/position:1388483098/?entityUrn=urn%3Ali%3Afs_treasuryMedia%3A(ACoAACWraMYBaKrL1jaOetH6bgyiTtIJ5VOwy58%2C1542027362353)&section=position%3A1388483098&treasuryCount=2')
+
+        else if(project === 'FPT')
+            window.open('https://github.com/minhchinh97h/OEA-FPT-Slovakia')
+
+        else if(project === 'Tikeri')
+            window.open('https://github.com/minhchinh97h/Tikeri-On-The-Run')
+    }
 
     render(){
         return(
@@ -20,7 +37,7 @@ export default class Work extends React.Component{
 
                     </div>
                 </div>
-                <div className='exp-holder'>
+                <div className='exp-holder' onClick={this.OpenNewWindow.bind(this, 'globuzzer')}>
                     <div className='company-logo-holder'>
                         <div className='globuzzer-logo-image-holder'>
 
@@ -84,7 +101,7 @@ export default class Work extends React.Component{
 
                     </div>
                 </div>
-                <div className='exp-holder'>
+                <div className='exp-holder' onClick={this.OpenNewWindow.bind(this, 'werewolves')}>
                     <div className='company-logo-holder'>
                         <div className='wwo-logo-image-holder'>
 
@@ -137,7 +154,7 @@ export default class Work extends React.Component{
 
                     </div>
                 </div>
-                <div className='exp-holder'>
+                <div className='exp-holder' onClick={this.OpenNewWindow.bind(this, '3D')}>
                     <div className='company-logo-holder'>
                         <div className='vamk-logo-image-holder'>
 
@@ -192,7 +209,7 @@ export default class Work extends React.Component{
 
                     </div>
                 </div>
-                <div className='exp-holder'>
+                <div className='exp-holder' onClick={this.OpenNewWindow.bind(this, 'FPT')}>
                     <div className='company-logo-holder'>
                         <div className='fpt-logo-image-holder'>
 
@@ -243,7 +260,7 @@ export default class Work extends React.Component{
 
                     </div>
                 </div>
-                <div className='exp-holder'>
+                <div className='exp-holder' onClick={this.OpenNewWindow.bind(this, 'Tikeri')}>
                     <div className='company-logo-holder'>
                         <div className='tk-logo-image-holder'>
 
