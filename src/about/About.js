@@ -1,6 +1,5 @@
 import React from 'react'
 import './About.css'
-import { tsConstructorType } from '@babel/types';
 
 export default class About extends React.Component{
     render(){
