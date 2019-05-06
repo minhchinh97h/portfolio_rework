@@ -38,15 +38,11 @@ export default class Header extends React.Component{
             loadingTextNode.classList.remove("add-animate-loading-text")
         }, 3000)
 
-        if(id !== "intro-container"){
-            
-        }
-
-        else{
+        if(id === "intro-container"){
             document.getElementById("hi-there-holder").classList.remove("hi-there-holder-ani")
             document.getElementById("im-holder").classList.remove("im-holder-ani")
             document.getElementById("duong-minh-chinh-holder").classList.remove("duong-minh-chinh-holder-ani")
-            
+
             setTimeout(() => {
                 
 
@@ -55,6 +51,11 @@ export default class Header extends React.Component{
                 document.getElementById("duong-minh-chinh-holder").classList.add("duong-minh-chinh-holder-ani")
             }, 3000)
         }
+    }
+
+    MobileSmoothlyScrollTo = (id, e) => {
+        this.CloseMobileRightTab()
+        this.SmoothlyScrollTo(id)
     }
 
     componentDidMount(){
@@ -112,19 +113,19 @@ export default class Header extends React.Component{
                 </div>
                 <div className='mobile-top-links-container'>
                     <div className='mobile-link-holder'>
-                        <a href="#">Intro</a>
+                        <p onClick={this.MobileSmoothlyScrollTo.bind(this, 'intro-container')}>Intro</p>
                     </div>
 
                     <div className='mobile-link-holder'>
-                        <a href="#">Intro</a>
+                        <p onClick={this.MobileSmoothlyScrollTo.bind(this, 'about-container')}>About</p>
                     </div>
 
                     <div className='mobile-link-holder'>
-                        <a href="#">Intro</a>
+                        <p onClick={this.MobileSmoothlyScrollTo.bind(this, 'work-container')}>Work</p>
                     </div>
 
                     <div className='mobile-link-holder'>
-                        <a href="#">Intro</a>
+                        <p onClick={this.MobileSmoothlyScrollTo.bind(this, 'contact-container')}>Contact</p>
                     </div>
                 </div>
                 
