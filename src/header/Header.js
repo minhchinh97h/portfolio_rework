@@ -3,7 +3,9 @@ import './Header.css'
 import {animateScroll} from 'react-scroll'
 
 let mobileHolderNode,
-    keys = {37: 1, 38: 1, 39: 1, 40: 1};
+    loadingScreenNode,
+    loadingTextNode,
+    bodyNode
 
 export default class Header extends React.Component{
 
@@ -11,64 +13,40 @@ export default class Header extends React.Component{
         mobileHolderNode.classList.remove("mrt-visible")
         mobileHolderNode.classList.add("mrt-visible")
 
-        document.body.classList.remove("disable-scrolling")
-        document.body.classList.add("disable-scrolling")
+        bodyNode.classList.remove("disable-scrolling")
+        bodyNode.classList.add("disable-scrolling")
     }
 
     CloseMobileRightTab = () => {
         mobileHolderNode.classList.remove("mrt-visible")
-        document.body.classList.remove("disable-scrolling")
-    }
-
-    IsDescendantOrIden = (parent, child) => {
-        if(parent === child)
-            return true
-
-        var node = child.parentNode
-
-        while(node !== null){
-            if(node === parent){
-            return true
-            }
-            node = node.parentNode
-        }
-
-        return false
+        bodyNode.classList.remove("disable-scrolling")
     }
 
     SmoothlyScrollTo = (id, e) => {
         let yOffSet = document.getElementById(id).offsetTop
-        // animateScroll.scrollTo(yOffSet, {
-        //     duration: 800,
-        //     delay: 0,
-        //     smooth: 'easeInOutQuart'
-        // })
 
         window.scrollTo(0, yOffSet)
 
-        document.getElementById("loading-screen").classList.remove("add-animate-loading-screen")
-        document.getElementById("loading-screen").classList.add("add-animate-loading-screen")
+        loadingScreenNode.classList.remove("add-animate-loading-screen")
+        loadingScreenNode.classList.add("add-animate-loading-screen")
         
-        document.getElementById("loading-text").classList.remove("add-animate-loading-text")
-        document.getElementById("loading-text").classList.add("add-animate-loading-text")
+        loadingTextNode.classList.remove("add-animate-loading-text")
+        loadingTextNode.classList.add("add-animate-loading-text")
 
         setTimeout(() => {
-            document.getElementById("loading-screen").classList.remove("add-animate-loading-screen")
-            document.getElementById("loading-text").classList.remove("add-animate-loading-text")
-            document.body.classList.remove("disable-scrolling")
-        }, 5000)
+            loadingScreenNode.classList.remove("add-animate-loading-screen")
+            loadingTextNode.classList.remove("add-animate-loading-text")
+        }, 3000)
+
+
+        
     }
 
     componentDidMount(){
         mobileHolderNode = document.getElementById("mobile-right-tab-holder")
-
-        
-
-        // document.addEventListener("click", (e) => {
-        //     if(!this.IsDescendantOrIden(mobileHolderNode, e.target) && e.target.id !== "hamburger-button"){
-        //         this.CloseMobileRightTab()
-        //     }
-        // })
+        loadingScreenNode = document.getElementById("loading-screen")
+        loadingTextNode = document.getElementById("loading-text")
+        bodyNode = document.body
     }
 
     render(){
@@ -80,7 +58,7 @@ export default class Header extends React.Component{
             <div className='header-container'>
                 <div className='right-links-container'>
                     <div className='link-holder'>
-                        <p >Intro</p>
+                        <p onClick={this.SmoothlyScrollTo.bind(this, 'intro-container')}>Intro</p>
 
                         <div className='highlight-indicator'></div>
                     </div>

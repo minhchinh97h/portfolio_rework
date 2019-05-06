@@ -65,13 +65,13 @@
 .link-holder a {
     font-size: 20px;
     text-decoration: none;
-    color: var(--primary-color);
+    color: black;
 }
 
 .link-holder p {
     font-size: 20px;
     text-decoration: none;
-    color: var(--primary-color);
+    color: black;
     margin: 0;
     cursor: pointer;
 }
@@ -115,7 +115,7 @@
 .mobile-top-links-container{
     width: 70%;
     height: 100%;
-    background-color: var(--primary-color);
+    background-color: black;
     position: absolute;
     right: 0;
     top: 0;
@@ -192,7 +192,7 @@
 
 
 .add-animate-loading-screen{
-    animation: animate-loading 5s ease 0s 1 alternate forwards;
+    animation: animate-loading 3s ease 0s 1 alternate forwards;
     display: flex
 }   
 
@@ -205,5 +205,5 @@
 }
 
 .add-animate-loading-text{
-    animation: animate-loading-text 5s ease 0s 1 alternate forwards;
+    animation: animate-loading-text 3s ease 0s 1 alternate forwards;
 }

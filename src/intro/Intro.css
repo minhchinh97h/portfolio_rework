@@ -26,11 +26,12 @@
 
 .hi-there-holder{
     opacity: 0;
-    animation-name: opacity-ani;
+    animation: opacity-ani 2.5s ease 0.5s 1 alternate forwards;
+    /* animation-name: opacity-ani;
     animation-duration: 2.5s;
     animation-delay: 0.5s;
     animation-fill-mode: forwards;
-    animation-timing-function: ease;
+    animation-timing-function: ease; */
     transform: translate(100px, -50px);
 }
 
@@ -44,11 +45,12 @@
 
 .im-holder{
     opacity: 0;
-    animation-name: opacity-ani;
+    animation: opacity-ani 2.5s ease 1.5s 1 alternate forwards;
+    /* animation-name: opacity-ani;
     animation-delay: 1.5s;
     animation-duration: 2.5s;
     animation-fill-mode: forwards;
-    animation-timing-function: ease;
+    animation-timing-function: ease; */
     transform: translate(100px, -50px);
 }
 
@@ -63,11 +65,12 @@
 
 .duong-minh-chinh-holder{
     opacity: 0;
-    animation-name: opacity-ani;
+    animation: opacity-ani 2.5s ease 2.5s 1 alternate forwards;
+    /* animation-name: opacity-ani;
     animation-delay: 2.5s;
     animation-duration: 2.5s;
     animation-fill-mode: forwards;
-    animation-timing-function: ease;
+    animation-timing-function: ease; */
     transform: translate(100px, -50px);
 }
 
