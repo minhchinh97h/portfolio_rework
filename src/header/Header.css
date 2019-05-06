@@ -23,6 +23,7 @@
     font-family: "minecraftmedium", "Playfair Display",  "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", -apple-system, BlinkMacSystemFont, 
     sans-serif;
+    background-color: white;
 }
 
 
@@ -38,11 +39,9 @@
     display: none;
 }
 
-@media only screen and (max-width: 425px){
+@media only screen and (max-width: 767px){
     .header-container{
         height: 70px;
-        background-color: transparent;
-        background-image: none;
     }
     .right-links-container{
         display: none;
@@ -57,7 +56,7 @@
 }
 
 #hamburger-button{
-    color: rgb(163, 163, 163);
+    color: black;
 }
 
 .link-holder{
@@ -201,7 +200,6 @@
     visibility: visible;
 }
 
-
 .add-animate-loading-screen{
     animation: animate-loading 3s ease 0s 1 alternate forwards;
     display: flex
@@ -211,10 +209,15 @@
     font-family: "minecraftmedium", "Playfair Display",  "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", -apple-system, BlinkMacSystemFont;
     font-size: 100px;
-    margin: 5px;
     color: white;
 }
 
 .add-animate-loading-text{
     animation: animate-loading-text 3s ease 0s 1 alternate forwards;
+}
+
+@media only screen and (max-width: 767px){
+    .loading-screen p {
+        font-size: 50px;
+    }
 }

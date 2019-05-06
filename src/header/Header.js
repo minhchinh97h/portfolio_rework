@@ -1,11 +1,13 @@
 import React from 'react'
 import './Header.css'
-import {animateScroll} from 'react-scroll'
+
+const bodyScrollLock = require('body-scroll-lock')
 
 let mobileHolderNode,
     loadingScreenNode,
     loadingTextNode,
     bodyNode
+
 
 export default class Header extends React.Component{
 
@@ -13,13 +15,43 @@ export default class Header extends React.Component{
         mobileHolderNode.classList.remove("mrt-visible")
         mobileHolderNode.classList.add("mrt-visible")
 
-        bodyNode.classList.remove("disable-scrolling")
-        bodyNode.classList.add("disable-scrolling")
+        bodyScrollLock.disableBodyScroll(document.getElementById("root"))
     }
 
     CloseMobileRightTab = () => {
         mobileHolderNode.classList.remove("mrt-visible")
         bodyNode.classList.remove("disable-scrolling")
+
+        bodyScrollLock.enableBodyScroll(document.getElementById("root"))
+    }
+
+    LoadLoadingScreen = () => {
+        loadingScreenNode.classList.remove("add-animate-loading-screen")
+        loadingScreenNode.classList.add("add-animate-loading-screen")
+        
+        loadingTextNode.classList.remove("add-animate-loading-text")
+        loadingTextNode.classList.add("add-animate-loading-text")
+
+        this.RemoveLoadingScreenClassToActiveAgain()
+    }
+
+    RemoveLoadingScreenClassToActiveAgain = () => {
+        setTimeout(() => {
+            loadingScreenNode.classList.remove("add-animate-loading-screen")
+            loadingTextNode.classList.remove("add-animate-loading-text")
+        }, 3000)
+    }
+
+    LoadIntroAnimation = () => {
+        document.getElementById("hi-there-holder").classList.remove("hi-there-holder-ani")
+        document.getElementById("im-holder").classList.remove("im-holder-ani")
+        document.getElementById("duong-minh-chinh-holder").classList.remove("duong-minh-chinh-holder-ani")
+
+        setTimeout(() => {
+            document.getElementById("hi-there-holder").classList.add("hi-there-holder-ani")
+            document.getElementById("im-holder").classList.add("im-holder-ani")
+            document.getElementById("duong-minh-chinh-holder").classList.add("duong-minh-chinh-holder-ani")
+        }, 3000)
     }
 
     SmoothlyScrollTo = (id, e) => {
@@ -27,29 +59,10 @@ export default class Header extends React.Component{
 
         window.scrollTo(0, yOffSet)
 
-        loadingScreenNode.classList.remove("add-animate-loading-screen")
-        loadingScreenNode.classList.add("add-animate-loading-screen")
-        
-        loadingTextNode.classList.remove("add-animate-loading-text")
-        loadingTextNode.classList.add("add-animate-loading-text")
-
-        setTimeout(() => {
-            loadingScreenNode.classList.remove("add-animate-loading-screen")
-            loadingTextNode.classList.remove("add-animate-loading-text")
-        }, 3000)
+        this.LoadLoadingScreen()
 
         if(id === "intro-container"){
-            document.getElementById("hi-there-holder").classList.remove("hi-there-holder-ani")
-            document.getElementById("im-holder").classList.remove("im-holder-ani")
-            document.getElementById("duong-minh-chinh-holder").classList.remove("duong-minh-chinh-holder-ani")
-
-            setTimeout(() => {
-                
-
-                document.getElementById("hi-there-holder").classList.add("hi-there-holder-ani")
-                document.getElementById("im-holder").classList.add("im-holder-ani")
-                document.getElementById("duong-minh-chinh-holder").classList.add("duong-minh-chinh-holder-ani")
-            }, 3000)
+            this.LoadIntroAnimation()
         }
     }
 
@@ -63,6 +76,9 @@ export default class Header extends React.Component{
         loadingScreenNode = document.getElementById("loading-screen")
         loadingTextNode = document.getElementById("loading-text")
         bodyNode = document.body
+
+        this.LoadLoadingScreen()
+        this.LoadIntroAnimation()
     }
 
 

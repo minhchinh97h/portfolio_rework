@@ -38,6 +38,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   margin: 0;
   padding: 0;
@@ -55,9 +56,4 @@ code {
 
 #root {
   overflow-x: hidden;
-}
-
-.disable-scrolling{
-  overflow: hidden;
-  position: fixed;
 }
