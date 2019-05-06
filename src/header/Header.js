@@ -38,11 +38,25 @@ export default class Header extends React.Component{
 
     SmoothlyScrollTo = (id, e) => {
         let yOffSet = document.getElementById(id).offsetTop
-        animateScroll.scrollTo(yOffSet, {
-            duration: 800,
-            delay: 0,
-            smooth: 'easeInOutQuart'
-        })
+        // animateScroll.scrollTo(yOffSet, {
+        //     duration: 800,
+        //     delay: 0,
+        //     smooth: 'easeInOutQuart'
+        // })
+
+        window.scrollTo(0, yOffSet)
+
+        document.getElementById("loading-screen").classList.remove("add-animate-loading-screen")
+        document.getElementById("loading-screen").classList.add("add-animate-loading-screen")
+        
+        document.getElementById("loading-text").classList.remove("add-animate-loading-text")
+        document.getElementById("loading-text").classList.add("add-animate-loading-text")
+
+        setTimeout(() => {
+            document.getElementById("loading-screen").classList.remove("add-animate-loading-screen")
+            document.getElementById("loading-text").classList.remove("add-animate-loading-text")
+            document.body.classList.remove("disable-scrolling")
+        }, 5000)
     }
 
     componentDidMount(){
@@ -60,6 +74,9 @@ export default class Header extends React.Component{
     render(){
         return(
             <>
+            <div className='loading-screen' id="loading-screen">
+                <p id="loading-text">LOADING ...</p>
+            </div>
             <div className='header-container'>
                 <div className='right-links-container'>
                     <div className='link-holder'>

@@ -24,6 +24,7 @@
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
     /* background-color: white; */
+    
 }
 
 .right-links-container{
@@ -78,8 +79,8 @@
 .link-button{
     background-color: transparent;
     border: none;
-    font-family: -apple-system, BlinkMacSystemFont, "minecraftmedium", "Playfair Display",  "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    font-family: "minecraftmedium", "Playfair Display",  "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", -apple-system, BlinkMacSystemFont
 }
 
 .highlight-indicator{
@@ -122,4 +123,87 @@
 
 .mrt-visible{
     transform: translateX(0%);
+}
+
+@keyframes animate-loading{
+    0% {
+        background-color: black;
+    }
+
+    10% {
+        background-color: white
+    }
+
+    50% {
+        background-color: black;
+    }
+
+    75% {
+        background-color: white;
+    }
+
+    90%{
+        opacity: 1;
+    }
+
+    100% {
+        background-color: black;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes animate-loading-text{
+    0% {
+        color: white
+    }
+
+    25% {
+        color: black
+    }
+
+    50% {
+        color: white;
+    }
+
+    75% {
+        color: black;
+    }
+
+    100% {
+        color: white;
+    }
+}
+
+.loading-screen{
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.add-animate-loading-screen{
+    animation: animate-loading 5s ease 0s 1 alternate forwards;
+    display: flex
+}   
+
+.loading-screen p {
+    font-family: "minecraftmedium", "Playfair Display",  "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", -apple-system, BlinkMacSystemFont;
+    font-size: 100px;
+    margin: 5px;
+    color: white;
+}
+
+.add-animate-loading-text{
+    animation: animate-loading-text 5s ease 0s 1 alternate forwards;
 }
