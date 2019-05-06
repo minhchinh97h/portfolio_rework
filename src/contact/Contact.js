@@ -29,7 +29,7 @@ export default class Contact extends React.Component{
 
                         </div>
                         <div className='linkedin-text-holder'>
-                            <p>/in/chinh-duong-28679b157/</p>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/chinh-duong-28679b157/">/in/chinh-duong-28679b157/</a>
                         </div>
                     </div>
 
@@ -38,7 +38,7 @@ export default class Contact extends React.Component{
 
                         </div>
                         <div className='github-text-holder'>
-                            <p>/minhchinh97h</p>
+                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/minhchinh97h">/minhchinh97h</a>
                         </div>
                     </div>
 
